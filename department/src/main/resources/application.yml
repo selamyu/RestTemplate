@@ -1,0 +1,26 @@
+server:
+  port: 5010
+
+spring:
+  application:
+    name: DEPARTMENT-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/departmentdb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone:http://localhost:8762/eureka
+#  instance:
+#    hostname: localhost
